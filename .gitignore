@@ -1,0 +1,42 @@
+# ==========================================
+# MyHWManager — Root .gitignore
+# ==========================================
+
+# --- Node.js / Frontend ---
+node_modules/
+dist/
+.env.local
+.env.*.local
+
+# --- Go Backend ---
+server/backend/main
+server/backend/server
+server/backend/myhwmanager_backend
+server/backend/myhwmanager.db
+server/backend/myhwmanager.db-shm
+server/backend/myhwmanager.db-wal
+server/backend/storage/
+server/backend/.env
+
+# --- Rust / Tauri Client ---
+client/src-tauri/target/
+client/src-tauri/gen/schemas/
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Build artifacts ---
+*.exe
+*.dll
+*.so
+*.dylib
+
+# --- Misc ---
+*.log
+*.tmp
